@@ -3,17 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
     <title>FinTrack</title>
 </head>
 <body>
-    <header>
-
+    <header class="header container">
+        <div class="profile-image">
+            <img src="./images/profile.jpg" alt="Imagem de perfil" >
+        </div>
+        <i class="fa-regular  fa-bell"></i>
     </header>
-    <main>
-        
+    <main class="main container">
+        <h1 class="greetings">Olá, Paty</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Últimos lançamentos</h2>
+                <div class="section">
+                <table class="table table-responsive">
+                    <tr>
+                        <td class="text-center">
+                            <i class="fa-solid fa-plane "></i>
+                        </td>
+                        <td>Viagens</td>
+                        <td class="text-end">R$1.000,00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <i class="fa-solid fa-plane"></i>
+                        </td>
+                        <td>Financiamento</td>
+                        <td class="text-end">R$1.000,00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <i class="fa-solid fa-plane"></i>
+                        </td>
+                        <td>Recebimento</td>
+                        <td class="text-end">R$1.000,00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <i class="fa-solid fa-plane"></i>
+                        </td>
+                        <td>Vestuário</td>
+                        <td class="text-end">R$1.000,00</td>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-primary">Ver todos</button>
+                </div>
+            </div><!-- .col-lg-6 -->
+            <div class="col-lg-6">
+                <h2>Visão Global</h2>
+                <div class="section">
+                    algum gráfico
+                </div>
+                <!-- <canvas id="financialChart"></canvas> -->
+            </div><!-- .col-lg-6 -->
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <i class="fa-solid fa-chart-simple"></i>
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-bullseye"></i>
+        </div>
     </footer>
+
+<script src="./js/chart.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
