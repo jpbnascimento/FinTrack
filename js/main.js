@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data: {
       labels: ['Receita Ativa', 'Receita Passiva', 'Custos Fixos', 'Custos Variáveis'],
       datasets: [{
-        data: [6500, 6400, 5000, 5000],
+        data: [1500, 750, 375, 375],
         backgroundColor: [
           '#e21b4e',
           '#ff969f',
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       maintainAspectRatio: false,
       plugins: {
         title: {
-          display: true,
+          display: false,
           text: 'Distribuição de Receitas e Custos'
         },
         legend: {
